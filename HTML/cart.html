@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>ClosetFinds | Cart</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <link rel="stylesheet" href="/CSS/cart.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
+    <div class="top-bar">
+      Brand New Cloths Added Everyday - Discover Your Style
+    </div>
+    <nav class="nav">
+      <i class="uil uil-bars navOpenBtn"></i>
+      <a href="/HTML/Index.html" class="logo">ClosetFinds</a>
+      <ul class="nav-links">
+        <i class="uil uil-times navCloseBtn"></i>
+        <li><a href="/HTML/Index.html">Home</a></li>
+        <li><a href="/HTML/mens.html">Men's</a></li>
+        <li><a href="/HTML/womens.html">Women's</a></li>
+        <li><a href="/HTML/accessories.html">Accessories</a></li>
+        <li><a href="/HTML/blog.html">Blog</a></li>
+      </ul>
+      <i class="uil uil-search search-icon" id="searchIcon"></i>
+      <div class="search-box">
+        <i class="uil uil-search search-icon"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </nav>
+   
+    <div class="container">
+        <header>ClosetFinds</header>
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Contact Information</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Phone Number</label>
+                            <input type="number" placeholder="Mobile Phone Number" required>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="details personal">
+                <span class="title">Shipping Address</span>
+                <div class="fields">
+                        <div class="input-field">
+                            <label>Country</label>
+                            <select required>
+                                <option disabled selected>Select Country</option>
+                                <option>India</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                            </select>
+                        </div>
+                    </div>
+            </div>
+                <div class="details ID">
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                    </button>
+                </div> 
+            </div>
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Billing Adress</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <input type="text" placeholder="First Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Last Name" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Adress" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Apartment, Suit, etc (Optional)" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="State & City" required>
+                        </div>
+                        <div class="input-field">
+                            <input type="number" placeholder="Pincode" required>
+                        </div>
+                    </div>
+                </div>
+                        <button class="sumbit">
+                            <span class="btnText" id="submitBtn">Submit</span>
+                        </button>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+
+    <!-- PAYMENT METHOD -->
+
+
+    <div class="container2">
+
+        <form action="">
+    
+            <div class="row">
+    
+    
+                <div class="col">
+    
+                    <h3 class="title">Payment Method</h3>
+    
+                    <div class="inputBox card-img">
+                        <span>Cards Accepted</span>
+                        <img src="/Photos/card_img.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Name<span>
+                        <input type="text">
+                    </div>
+                    <div class="inputBox">
+                        <span>Credit Card Number</span>
+                        <input type="number">
+                    </div>
+    
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Exp Year</span>
+                            <input type="number">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Checkout" class="submit-btn">
+        </form>
+    </div>    
+    <script src="/JS/cart.js"></script>
+    </body>
+    </html>
